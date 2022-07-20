@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gerador de CPF e CNPJ
 
-## Getting Started
+Gerador de CPF e CNPJ válidos para testes de desenovimento.
 
-First, run the development server:
+Acesse: [Gerador CPF/CNPJ](https://gerador.progmar.dev)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Por quê?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Como todo bom densenvolvedor brasileiro, quem nunca precisou gerar um CPF ou CNPJ válidos para aquele teste feceiro.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Pois bem, temos muitos geradores famosos por aí, porém recentemente eu e meus colegas, passamos por experiencias ruins, demoradas. Então, porque não como bom desenvolvedor criar algo leve, prático e rápido.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Sem milhões de publicidade pulando na sua frente!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Gerador CPF e CNPJ](https://user-images.githubusercontent.com/5226773/180087586-e7a45c75-5df8-4301-adfe-b69ba7ba53c0.png)
 
-## Learn More
+## Features
+- [x] Gerador de CPF válido
+- [x] Gerador de CNPJ válido
+- [ ] Gerador de RG válido (Em progresso)
 
-To learn more about Next.js, take a look at the following resources:
+## Colabore
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Colabore criando Issues de sugestões, bugs e o que mais precisar. ;)
