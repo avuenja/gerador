@@ -22,7 +22,12 @@ const ServicesButton = ({ documentType, onGenerate }: ServicesButtonProps) => {
       >
         CNPJ
       </Button>
-      <Button disabled>RG</Button>
+      <Button
+        isActive={documentType === DocumentType.RG}
+        onClick={() => onGenerate(DocumentType.RG)}
+      >
+        RG
+      </Button>
     </HStack>
   )
 }

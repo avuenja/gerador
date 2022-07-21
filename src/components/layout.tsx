@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
         <meta name="author" content="Marcelo Pecin" />
         <meta name="author" content="avuenja" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <title>Gerador CPF/CNPJ/RG - Homepage</title>
+        <title>Gerador CPF/CNPJ/RG | Homepage</title>
       </Head>
 
       <Flex direction="column" height="100vh">

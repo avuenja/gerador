@@ -22,3 +22,9 @@ Sem milhões de publicidade pulando na sua frente!
 ## Colabore
 
 Colabore criando Issues de sugestões, bugs e o que mais precisar. ;)
+
+## Importante
+O gerador tem como intenção ajudar estudantes, programadores, analistas e testadores a gerar documentos válidos, normalmente necessários para testar seus softwares em desenvolvimento.
+
+A má utilização dos dados gerados é de total responsabilidade do usuário. Os números são gerados de forma aleatória, respeitando as regras de criação de cada
+documento.

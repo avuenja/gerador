@@ -1,6 +1,6 @@
 import React from 'react'
 import type { NextPage } from 'next'
-import { Heading, HStack, useClipboard, VStack } from '@chakra-ui/react'
+import { Heading, HStack, Text, useClipboard, VStack } from '@chakra-ui/react'
 import {
   ArrowsClockwise,
   Check,
@@ -9,8 +9,8 @@ import {
   MaskSad,
 } from 'phosphor-react'
 
+import { onGenerateCNPJ, onGenerateCPF, onGenerateRG, onSetMask } from '@/utils'
 import { DocumentType } from '@/enums'
-import { onGenerateCNPJ, onGenerateCPF, onSetMask } from '@/utils'
 import AppIcon from '@/components/app-icon'
 import AppButton from '@/components/app-button'
 import ServicesButton from '@/components/services-button'
@@ -35,6 +35,8 @@ const Home: NextPage = () => {
       doc = onGenerateCPF(mask)
     } else if (type === DocumentType.CNPJ) {
       doc = onGenerateCNPJ(mask)
+    } else if (type === DocumentType.RG) {
+      doc = onGenerateRG(mask)
     }
 
     setDocument(doc)
@@ -56,12 +58,12 @@ const Home: NextPage = () => {
     <VStack alignItems="center" justifyContent="center" flex="1" spacing="10">
       <ServicesButton documentType={documentType} onGenerate={onGenerate} />
 
-      <Heading>{document}</Heading>
+      <Heading as="h1">{document}</Heading>
 
       <HStack>
         <AppButton
           motionKey={hasCopied ? 'copied' : 'copy'}
-          tooltip={hasCopied ? 'Copied!' : 'Copy'}
+          tooltip={hasCopied ? 'Copiado!' : 'Copiar'}
           aria-label="Copiar documento gerado"
           icon={<AppIcon icon={hasCopied ? Check : CopySimple} />}
           onClick={onCopy}

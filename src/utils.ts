@@ -97,15 +97,39 @@ export const onGenerateCNPJ = (masked: boolean): string => {
   return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${n10}${n11}${n12}${d1}${d2}`
 }
 
+export const onGenerateRG = (masked: boolean): string => {
+  const total = 8
+  const number = 9
+  const [n1, n2, n3, n4, n5, n6, n7, n8] = initialArray(total, number)
+
+  let d1: number | string =
+    n1 * 2 + n2 * 3 + n3 * 4 + n4 * 5 + n5 * 6 + n6 * 7 + n7 * 8 + n8 * 9
+
+  d1 = 11 - mod(d1, 11)
+  if (d1 === 10) d1 = 'X'
+  if (d1 >= 10) d1 = 0
+
+  if (masked) {
+    return `${n1}${n2}.${n3}${n4}${n5}.${n6}${n7}${n8}-${d1}`
+  }
+
+  return `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${d1}`
+}
+
 export const onSetMask = (value: string, type: DocumentType): string => {
   switch (type) {
     case DocumentType.CPF:
       return value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, '$1.$2.$3-$4')
+
     case DocumentType.CNPJ:
       return value.replace(
         /(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g,
         '$1.$2.$3/$4-$5'
       )
+
+    case DocumentType.RG:
+      return value.replace(/(\d{2})(\d{3})(\d{3})(\d{1})/g, '$1.$2.$3-$4')
+
     default:
       return value
   }
