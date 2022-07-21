@@ -1,23 +1,25 @@
-# Gerador de CPF e CNPJ
+# Gerador de CPF, CNPJ e RG
 
-Gerador de CPF e CNPJ válidos para testes de desenovimento.
+Gerador de CPF, CNPJ e RG válidos para testes de desenovimento.
 
 Acesse: [Gerador CPF/CNPJ](https://gerador.progmar.dev)
 
 ## Por quê?
 
-Como todo bom densenvolvedor brasileiro, quem nunca precisou gerar um CPF ou CNPJ válidos para aquele teste feceiro.
+Como todo bom densenvolvedor brasileiro, quem nunca precisou gerar um CPF, CNPJ ou RG válidos para aquele teste faceiro.
 
-Pois bem, temos muitos geradores famosos por aí, porém recentemente eu e meus colegas, passamos por experiencias ruins, demoradas. Então, porque não como bom desenvolvedor criar algo leve, prático e rápido.
+Pois bem, temos muitos geradores famosos por aí, porém recentemente eu e meus colegas, passamos por experiências ruins e demoradas. Então, porque não como um bom desenvolvedor, criar o seu próprio hehe. 
 
-Sem milhões de publicidade pulando na sua frente!
+Algo que fosse leve, prático e rápido. Sem milhões de publicidade pulando na sua frente e fazendo você esperar para que daí sim possa gerar o documento necessário.
 
-![Gerador CPF e CNPJ](https://user-images.githubusercontent.com/5226773/180087586-e7a45c75-5df8-4301-adfe-b69ba7ba53c0.png)
+Pois bem, assim nasceu o querido Gerador.
+
+![Gerador CPF,CNPJ e RG](https://user-images.githubusercontent.com/5226773/180087586-e7a45c75-5df8-4301-adfe-b69ba7ba53c0.png)
 
 ## Features
 - [x] Gerador de CPF válido
 - [x] Gerador de CNPJ válido
-- [ ] Gerador de RG válido (Em progresso)
+- [x] Gerador de RG válido
 
 ## Colabore
 
