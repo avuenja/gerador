@@ -1,8 +1,10 @@
-# Gerador de CPF, CNPJ e RG
+# Gerador
 
-Gerador de CPF, CNPJ e RG válidos para testes de desenovimento.
+* Gerador de CPF, CNPJ e RG válidos para testes de desenovimento.
 
-Acesse: [Gerador CPF/CNPJ](https://gerador.progmar.dev)
+* JSON Pretty para facilitar a leitura de JSONs.
+
+### _Acesse: [gerador.dev.br](https://gerador.dev.br)_
 
 ## Por quê?
 
@@ -14,12 +16,15 @@ Algo que fosse leve, prático e rápido. Sem milhões de publicidade pulando na 
 
 Pois bem, assim nasceu o querido Gerador.
 
-![Gerador CPF,CNPJ e RG](https://user-images.githubusercontent.com/5226773/180087586-e7a45c75-5df8-4301-adfe-b69ba7ba53c0.png)
+![Gerador CPF,CNPJ e RG](https://user-images.githubusercontent.com/5226773/182047125-bf829b64-f478-4ef7-903d-f990da27bf8f.png)
+
+![Gerador - JSON Pretty](https://user-images.githubusercontent.com/5226773/182047153-f1ca5cc3-720a-4f07-88b3-c7e53bd54c6b.png)
 
 ## Features
 - [x] Gerador de CPF válido
 - [x] Gerador de CNPJ válido
 - [x] Gerador de RG válido
+- [x] JSON Pretty
 
 ## Colabore
 
