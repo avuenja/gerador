@@ -22,7 +22,9 @@ const JsonPretty = () => {
 
   const handlePrettify = () => {
     try {
-      setPrettyJson(JSON.stringify(JSON.parse(json), null, 4))
+      const escapedJson = json.replace(/[“”]/g, '"')
+
+      setPrettyJson(JSON.stringify(JSON.parse(escapedJson), null, 4))
     } catch (e) {
       setIsInvalid(true)
     }
