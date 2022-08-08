@@ -1,7 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
-import { Button, Textarea, useColorModeValue, VStack } from '@chakra-ui/react'
+import {
+  Button,
+  HStack,
+  Textarea,
+  useColorModeValue,
+  VStack,
+} from '@chakra-ui/react'
 
 import AppCodeBlock from '@/components/app-code-block'
 
@@ -30,6 +36,11 @@ const JsonPretty = () => {
     }
   }
 
+  const handleBack = () => {
+    setPrettyJson('')
+    setIsInvalid(false)
+  }
+
   const handleNew = () => {
     setJson('')
     setPrettyJson('')
@@ -49,7 +60,10 @@ const JsonPretty = () => {
       <VStack flex="1" justifyContent="center" spacing="5">
         {prettyJson.length > 0 ? (
           <>
-            <Button onClick={handleNew}>New Pretty</Button>
+            <HStack spacing="5">
+              <Button onClick={handleBack}>JSON Raw</Button>
+              <Button onClick={handleNew}>New Pretty</Button>
+            </HStack>
 
             <motion.div
               key={'pretty-json'}
