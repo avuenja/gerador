@@ -25,6 +25,7 @@ const Navbar = () => {
           <Show above="sm">
             <HStack spacing="5">
               <NavLink href="/">Documentos</NavLink>
+              <NavLink href="/credit-card">Cartão de Crédito</NavLink>
               <NavLink href="/json-pretty">JSON Pretty</NavLink>
             </HStack>
           </Show>
