@@ -1,8 +1,10 @@
 # Gerador
 
-* Gerador de CPF, CNPJ e RG válidos para testes de desenovimento.
+- Gerador de CPF, CNPJ e RG válidos para testes de desenvolvimento.
 
-* JSON Pretty para facilitar a leitura de JSONs.
+- JSON Pretty para facilitar a leitura de JSONs.
+
+- Gerador de Cartão de Créditos válidos para testes de desenvolvimento.
 
 ### _Acesse: [gerador.dev.br](https://gerador.dev.br)_
 
@@ -10,27 +12,32 @@
 
 Como todo bom densenvolvedor brasileiro, quem nunca precisou gerar um CPF, CNPJ ou RG válidos para aquele teste faceiro.
 
-Pois bem, temos muitos geradores famosos por aí, porém recentemente eu e meus colegas, passamos por experiências ruins e demoradas. Então, porque não como um bom desenvolvedor, criar o seu próprio hehe. 
+Pois bem, temos muitos geradores famosos por aí, porém recentemente eu e meus colegas, passamos por experiências ruins e demoradas. Então, porque não como um bom desenvolvedor, criar o seu próprio hehe.
 
 Algo que fosse leve, prático e rápido. Sem milhões de publicidade pulando na sua frente e fazendo você esperar para que daí sim possa gerar o documento necessário.
 
 Pois bem, assim nasceu o querido Gerador.
 
-![Gerador CPF,CNPJ e RG](https://user-images.githubusercontent.com/5226773/182047125-bf829b64-f478-4ef7-903d-f990da27bf8f.png)
+![Gerador - CPF, CNPJ e RG](https://user-images.githubusercontent.com/5226773/194178532-350fba85-7d38-4d51-9da4-9dd2f8f76fa2.png)
 
-![Gerador - JSON Pretty](https://user-images.githubusercontent.com/5226773/182047153-f1ca5cc3-720a-4f07-88b3-c7e53bd54c6b.png)
+![Gerador - JSON Pretty](https://user-images.githubusercontent.com/5226773/194178376-3387aedb-6cc8-416b-a6ba-ccc5a0f295b5.png)
+
+![Gerador - Cartão de Crédito](https://user-images.githubusercontent.com/5226773/194178445-ff157c43-d5e7-4688-bec5-5ab64289fb6a.png)
 
 ## Features
+
 - [x] Gerador de CPF válido
 - [x] Gerador de CNPJ válido
 - [x] Gerador de RG válido
 - [x] JSON Pretty
+- [x] Gerador de Cartão de Crédito válido
 
 ## Colabore
 
 Colabore criando Issues de sugestões, bugs e o que mais precisar. ;)
 
 ## Importante
+
 O gerador tem como intenção ajudar estudantes, programadores, analistas e testadores a gerar documentos válidos, normalmente necessários para testar seus softwares em desenvolvimento.
 
 A má utilização dos dados gerados é de total responsabilidade do usuário. Os números são gerados de forma aleatória, respeitando as regras de criação de cada

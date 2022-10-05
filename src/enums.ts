@@ -3,3 +3,8 @@ export enum DocumentType {
   CNPJ = 'CNPJ',
   RG = 'RG',
 }
+
+export enum CreditCardBrand {
+  MASTERCARD = 'mastercard',
+  VISA = 'visa',
+}

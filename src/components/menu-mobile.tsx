@@ -44,6 +44,17 @@ const MobileMenu = () => {
             Documentos
           </MenuItem>
         </NextLink>
+        <NextLink href="/credit-card" passHref>
+          <MenuItem
+            as={Link}
+            bg={isActive('/credit-card') ? bg : undefined}
+            color={isActive('/credit-card') ? color : undefined}
+            _active={{}}
+            _focus={{}}
+          >
+            Cartão de Crédito
+          </MenuItem>
+        </NextLink>
         <NextLink href="/json-pretty" passHref>
           <MenuItem
             as={Link}
