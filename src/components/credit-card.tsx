@@ -6,12 +6,12 @@ interface CreditCardComponentProps {
 }
 
 const CreditCardComponent = ({ children, brand }: CreditCardComponentProps) => {
-  const bgCard = useColorModeValue('gray.50', 'gray.700')
+  const bgCard = useColorModeValue('gray.100', 'gray.700')
 
   return (
     <Box
       background={bgCard}
-      paddingX="4rem"
+      paddingX={{ base: '2rem', md: '4rem' }}
       paddingY="2rem"
       borderRadius={10}
       boxShadow="lg"
@@ -23,7 +23,7 @@ const CreditCardComponent = ({ children, brand }: CreditCardComponentProps) => {
         width="3rem"
         height="auto"
         position="absolute"
-        right="4rem"
+        right={{ base: '2rem', md: '4rem' }}
         bottom="2.5rem"
       >
         <Image src={`/brands/${brand}.svg`} alt="Mastercard" />

@@ -5,6 +5,7 @@ export enum DocumentType {
 }
 
 export enum CreditCardBrand {
+  AMEX = 'amex',
   MASTERCARD = 'mastercard',
   VISA = 'visa',
 }

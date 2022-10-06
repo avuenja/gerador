@@ -4,7 +4,12 @@ import Head from 'next/head'
 import { Heading, HStack, VStack } from '@chakra-ui/react'
 import { ArrowsClockwise, MaskHappy, MaskSad } from 'phosphor-react'
 
-import { onGenerateCNPJ, onGenerateCPF, onGenerateRG, onSetMask } from '@/utils'
+import {
+  onGenerateCNPJ,
+  onGenerateCPF,
+  onGenerateRG,
+  onSetMask,
+} from '@/utils/document'
 import { DocumentType } from '@/enums'
 
 import AppIcon from '@/components/app-icon'

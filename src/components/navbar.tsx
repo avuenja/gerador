@@ -22,7 +22,7 @@ const Navbar = () => {
             </Heading>
           </Link>
 
-          <Show above="sm">
+          <Show above="md">
             <HStack spacing="5">
               <NavLink href="/">Documentos</NavLink>
               <NavLink href="/credit-card">Cartão de Crédito</NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <HStack spacing="2.5">
           <ToggleTheme />
 
-          <Hide above="sm">
+          <Hide above="md">
             <MobileMenu />
           </Hide>
         </HStack>

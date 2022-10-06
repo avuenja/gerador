@@ -1,13 +1,18 @@
 import React from 'react'
-import { Button, Heading, HStack, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
+import { Heading, HStack, VStack } from '@chakra-ui/react'
 
-import { onGenerateCreditCard } from '@/utils'
+import { onGenerateCreditCard } from '@/utils/credit-card'
 import { CreditCardBrand } from '@/enums'
 import { ICreditCard } from '@/interfaces'
 
+import { ArrowsClockwise } from 'phosphor-react'
 import CopyButton from '@/components/copy-button'
 import CreditCardComponent from '@/components/credit-card'
+import CardBrandsButton from '@/components/card-brands-button'
+import AppButton from '@/components/app-button'
+import AppIcon from '@/components/app-icon'
+import TextAnimated from '@/components/text-animated'
 
 const CreditCard = () => {
   const [creditCard, setCreditCard] = React.useState<ICreditCard>({
@@ -38,26 +43,28 @@ const CreditCard = () => {
       </Head>
 
       <VStack justifyContent="center" flex="1" spacing="10">
-        <HStack>
-          <Button onClick={() => onGenerate(CreditCardBrand.MASTERCARD)}>
-            Mastercard
-          </Button>
-          <Button onClick={() => onGenerate(CreditCardBrand.VISA)}>Visa</Button>
-        </HStack>
+        <CardBrandsButton
+          brandType={creditCard.brand}
+          onGenerate={onGenerate}
+        />
 
         <CreditCardComponent brand={creditCard.brand}>
           <VStack alignItems="stretch" spacing={5}>
             <HStack spacing={5} alignItems="center">
-              <Heading as="h2" size="md" fontFamily="mono">
-                {creditCard.number}
-              </Heading>
+              <TextAnimated motionKey={creditCard.number}>
+                <Heading as="h2" size="md" fontFamily="mono">
+                  {creditCard.number}
+                </Heading>
+              </TextAnimated>
               <CopyButton variant="ghost" size="sm" text={creditCard.number} />
             </HStack>
 
             <HStack spacing={5} alignItems="center">
-              <Heading as="h2" size="md" fontFamily="mono">
-                {creditCard.expirity}
-              </Heading>
+              <TextAnimated motionKey={creditCard.expirity}>
+                <Heading as="h2" size="md" fontFamily="mono">
+                  {creditCard.expirity}
+                </Heading>
+              </TextAnimated>
               <CopyButton
                 variant="ghost"
                 size="sm"
@@ -66,13 +73,25 @@ const CreditCard = () => {
             </HStack>
 
             <HStack spacing={5} alignItems="center">
-              <Heading as="h2" size="md" fontFamily="mono">
-                {creditCard.cvv}
-              </Heading>
+              <TextAnimated motionKey={creditCard.cvv}>
+                <Heading as="h2" size="md" fontFamily="mono">
+                  {creditCard.cvv}
+                </Heading>
+              </TextAnimated>
               <CopyButton variant="ghost" size="sm" text={creditCard.cvv} />
             </HStack>
           </VStack>
         </CreditCardComponent>
+
+        <HStack>
+          <AppButton
+            motionKey={creditCard.number}
+            tooltip="Gerar novo cartão de crédito"
+            aria-label="Re:Gerar"
+            icon={<AppIcon icon={ArrowsClockwise} />}
+            onClick={() => onGenerate(creditCard.brand)}
+          />
+        </HStack>
       </VStack>
     </>
   )
