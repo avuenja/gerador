@@ -11,11 +11,12 @@ const CreditCardComponent = ({ children, brand }: CreditCardComponentProps) => {
   return (
     <Box
       background={bgCard}
-      paddingX={{ base: '2rem', md: '4rem' }}
+      paddingX={{ base: '1rem', md: '4rem' }}
       paddingY="2rem"
       borderRadius={10}
       boxShadow="lg"
       position="relative"
+      width={{ base: '100%', sm: '23rem' }}
     >
       {children}
 
