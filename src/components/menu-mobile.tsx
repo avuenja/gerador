@@ -66,6 +66,17 @@ const MobileMenu = () => {
             JSON Pretty
           </MenuItem>
         </NextLink>
+        <NextLink href="/base64-encode-decode" passHref>
+          <MenuItem
+            as={Link}
+            bg={isActive('/base64-encode-decode') ? bg : undefined}
+            color={isActive('/base64-encode-decode') ? color : undefined}
+            _active={{}}
+            _focus={{}}
+          >
+            Base64 Encode/Decode
+          </MenuItem>
+        </NextLink>
       </MenuList>
     </Menu>
   )

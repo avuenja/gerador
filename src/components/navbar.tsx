@@ -27,6 +27,7 @@ const Navbar = () => {
               <NavLink href="/">Documentos</NavLink>
               <NavLink href="/credit-card">Cartão de Crédito</NavLink>
               <NavLink href="/json-pretty">JSON Pretty</NavLink>
+              <NavLink href="/base64-encode-decode">Base64 Encode/Decode</NavLink>
             </HStack>
           </Show>
         </HStack>
