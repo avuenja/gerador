@@ -6,6 +6,8 @@
 
 - Gerador de Cartão de Créditos válidos para testes de desenvolvimento.
 
+- Base64 Encode e Decode.
+
 ### _Acesse: [gerador.dev.br](https://gerador.dev.br)_
 
 ## Por quê?
@@ -31,6 +33,7 @@ Pois bem, assim nasceu o querido Gerador.
 - [x] Gerador de RG válido
 - [x] JSON Pretty
 - [x] Gerador de Cartão de Crédito válido
+- [x] Base64 Encoding e Decoding
 
 ## Colabore
 
